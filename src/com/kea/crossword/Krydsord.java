@@ -81,14 +81,14 @@ public class Krydsord {
 
     public void printKrydsord(){
         //udskriv krydsord
-        System.out.println("__");
+        //System.out.println("__");
         for (int i=0;i<3;i++){
             for (int j=0;j<3;j++){
                 System.out.print(krydsord[i][j]);
             }
             System.out.println();
         }
-        //System.out.println("___");
+        System.out.println("___");
     }
 
     public void printOrd(){
@@ -114,7 +114,7 @@ public class Krydsord {
                     //er det en løsning?
                     if (checkKrydsord()){
                         count++;
-                        System.out.print(count);
+                        System.out.println("#" + count);
                         printKrydsord();
                     }
                 }
